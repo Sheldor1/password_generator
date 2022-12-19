@@ -3,7 +3,9 @@ import time
 from tkinter import *
 
 root = Tk()
-root.geometry('800x400')
+root.geometry('400x200')
+root.resizable(False, False)
+root.title("Password Generator")
 pw = ""
 
 lbl = Label(root, text="")
@@ -41,7 +43,3 @@ button = Button(root, text="Generate New", command=generate).place(x=100,y=20)
 buttoncopy = Button(root, text="Copy this Password", command=copy).place(x=87,y=100)
 buttonexit = Button(root, text="Exit", command=root.quit).place(x=250,y=50)
 root.mainloop()
-
-        
-
-
